@@ -1,0 +1,48 @@
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─── Build outputs ───────────────────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+apps/api/dist/
+
+# ─── Environment variables — NEVER commit real .env files ────────────────────
+# .env.example IS safe to commit (it has only placeholders)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+apps/api/.env
+apps/web/.env.local
+
+# ─── Database files ──────────────────────────────────────────────────────────
+*.db
+*.db-journal
+*.sqlite
+apps/api/prisma/*.db
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ─── OS / Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Misc ────────────────────────────────────────────────────────────────────
+.vercel
+*.zip

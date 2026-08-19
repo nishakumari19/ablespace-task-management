@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --card-bg: #ffffff;
+  --card-border: #e4e4e7;
+  --input-bg: #f4f4f5;
+  --sidebar-bg: #fafafa;
+  --sidebar-border: #f4f4f5;
+  --accent-color: #09090b;
+  --accent-hover: #18181b;
+  --accent-light: #f4f4f5;
+  --accent-text: #09090b;
+}
+
+[data-theme="dark"] {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card-bg: #121215;
+  --card-border: #27272a;
+  --input-bg: #18181b;
+  --sidebar-bg: #0d0d10;
+  --sidebar-border: #1e1e22;
+  --accent-light: #27272a;
+  --accent-text: #ffffff;
+}
+
+/* 6 Color Modes matching Figma page 10.png */
+[data-accent="black"] {
+  --accent-color: #09090b;
+  --accent-hover: #18181b;
+  --accent-light: #f4f4f5;
+}
+
+[data-accent="blue"] {
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-light: #eef2ff;
+}
+
+[data-accent="amber"] {
+  --accent-color: #d97706;
+  --accent-hover: #b45309;
+  --accent-light: #fffbeb;
+}
+
+[data-accent="pink"] {
+  --accent-color: #db2777;
+  --accent-hover: #be185d;
+  --accent-light: #fdf2f8;
+}
+
+[data-accent="rose"] {
+  --accent-color: #e11d48;
+  --accent-hover: #be123c;
+  --accent-light: #fff1f2;
+}
+
+[data-accent="emerald"] {
+  --accent-color: #059669;
+  --accent-hover: #047857;
+  --accent-light: #ecfdf5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Custom Primary Button Styling using Accent Variable */
+.btn-primary {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
