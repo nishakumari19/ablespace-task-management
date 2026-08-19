@@ -4,7 +4,7 @@ Full Stack Assessment task management application built with **Next.js 14 (App R
 
 **🔗 Live Demo:** [https://ablespace-task-management-web.vercel.app/login](https://ablespace-task-management-web.vercel.app/login)
 **📡 Backend API:** [https://ablespace-task-management-kgjz.onrender.com/api](https://ablespace-task-management-kgjz.onrender.com/api)
-**📄 Part 2 Submission:** [AbleSpace Take Data — Product Understanding Document](YOUR_GOOGLE_DRIVE_LINK_HERE)
+**📄 Part 2 Submission:** [AbleSpace Take Data — Product Understanding Document][(https://docs.google.com/document/d/1GBcT4Io0xeQCDRoKtQmGSdY9DwopjU88/edit?usp=drive_link&ouid=112792633146963158913&rtpof=true&sd=true)]
 
 ---
 
@@ -49,73 +49,6 @@ Full Stack Assessment task management application built with **Next.js 14 (App R
         └── vercel.json          # Vercel deployment config
 ```
 
----
-
-## 🛠️ Local Development Setup
-
-### 1. Clone & Install
-```bash
-git clone https://github.com/nishakumari19/ablespace-task-management.git
-cd ablespace-task-management
-npm install
-```
-
-### 2. Configure Environment Variables
-
-**Backend:**
-```bash
-cp apps/api/.env.example apps/api/.env
-```
-Edit `apps/api/.env`:
-```env
-MONGODB_URI=mongodb+srv://<user>:<pass>@<cluster>.mongodb.net/<db>
-JWT_SECRET=your-random-secret-here
-PORT=3001
-CORS_ORIGIN=http://localhost:3000
-```
-
-**Frontend:**
-```bash
-cp apps/web/.env.example apps/web/.env.local
-```
-Edit `apps/web/.env.local`:
-```env
-NEXT_PUBLIC_API_URL=http://localhost:3001/api
-```
-
-### 3. Seed the Database
-```bash
-npm run seed
-```
-
-### 4. Run Both Servers
-```bash
-npm run dev
-```
-- **Frontend:** http://localhost:3000
-- **Backend API:** http://localhost:3001/api
-
----
-
-## 🔑 Environment Variables Reference
-
-### Backend (`apps/api/.env`)
-
-| Variable | Required | Description |
-|---|---|---|
-| `MONGODB_URI` | ✅ | MongoDB Atlas connection string |
-| `JWT_SECRET` | ✅ | Secret for signing JWT tokens |
-| `PORT` | ❌ | Server port (Render sets this automatically) |
-| `CORS_ORIGIN` | ✅ | Allowed frontend URL(s), comma-separated |
-
-### Frontend (`apps/web/.env.local`)
-
-| Variable | Required | Description |
-|---|---|---|
-| `NEXT_PUBLIC_API_URL` | ✅ | Full backend API URL including `/api` suffix |
-
----
-
 ## 🎨 Implemented Features
 
 ### Login (`/login`)
@@ -151,21 +84,9 @@ npm run dev
 
 ---
 
-## 📌 Intentional Deviations from Figma
-
-| Deviation | Reason |
-|---|---|
-| **Inter font** added | Figma uses Inter; applied via Google Fonts for accurate typography |
-| **Google OAuth** shows toast | Full OAuth requires a registered Google app — not in scope |
-| **Teams field** as label/tag | Avoids building a full multi-tenant team system out of scope |
-| **Resource attachments** | UI affordance present; actual upload requires cloud storage |
-| **Labels always show text** | Fixed Tailwind flex-shrink bug collapsing text next to Tag icon |
-
----
-
 ## 🗂️ Part 2 — AbleSpace Product Understanding
 
-**Submission:** [AbleSpace Take Data — Product Understanding Document](YOUR_GOOGLE_DRIVE_LINK_HERE)
+**Submission:** [AbleSpace Take Data — Product Understanding Document](https://docs.google.com/document/d/1GBcT4Io0xeQCDRoKtQmGSdY9DwopjU88/edit?usp=drive_link&ouid=112792633146963158913&rtpof=true&sd=true)
 
 The document covers:
 - Step-by-step walkthrough of the **Take Data** feature from the Caseload tab, with screenshots
