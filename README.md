@@ -4,7 +4,7 @@ Full Stack Assessment task management application built with **Next.js 14 (App R
 
 **🔗 Live Demo:** [https://ablespace-task-management-web.vercel.app/login](https://ablespace-task-management-web.vercel.app/login)
 **📡 Backend API:** [https://ablespace-task-management-kgjz.onrender.com/api](https://ablespace-task-management-kgjz.onrender.com/api)
-**📄 Part 2 Submission:** [AbleSpace Take Data — Product Understanding Document][(https://docs.google.com/document/d/1GBcT4Io0xeQCDRoKtQmGSdY9DwopjU88/edit?usp=drive_link&ouid=112792633146963158913&rtpof=true&sd=true)]
+**📄 Part 2 Submission:** [AbleSpace Take Data — Product Understanding Document](https://docs.google.com/document/d/1GBcT4Io0xeQCDRoKtQmGSdY9DwopjU88/edit?usp=drive_link&ouid=112792633146963158913&rtpof=true&sd=true)
 
 ---
 
